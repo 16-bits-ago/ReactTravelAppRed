@@ -1,16 +1,14 @@
-
-import { useState } from 'react';
-import './App.scss';
+import { useState } from 'react'
+import './App.scss'
 import styles from './App.module.scss'
-import {initialPlaces} from './place.data';
+import { initialPlaces } from './place.data'
 
 function App() {
   /* const [places, setPlaces] = useState(initialPlaces); */
 
   return (
     <div className={styles.app}>
-      
-      <h1>SCSS Basics</h1>
+      <h1 className=''>SCSS Basics</h1>
       <button>go to channel</button>
       <button>go to channel</button>
       {/* { places.map(place => (
@@ -20,7 +18,7 @@ function App() {
             <div className={styles.country}>{place.country}</div>
           </div>))} */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
