@@ -1,23 +1,18 @@
 
 import { useState } from 'react';
 import './App.scss';
-import styles from './App.scss'
+import styles from './App.module.scss'
 import {initialPlaces} from './place.data';
 
 function App() {
   /* const [places, setPlaces] = useState(initialPlaces); */
 
   return (
-    <div className="bg-[#F7F7F7]">
+    <div className={styles.app}>
       
-      <h1 className='text-xl font-medium'>SCSS Basics</h1>
-      <button className='border border-solid border-pink-200
-      hover:bg-pink-200'>go to channel</button>
-      <button className='active'>go to channel</button>
-      {/* <div className='asd'>
-        <h2>SCSS</h2>
-        <button>asfasdf</button>
-      </div> */}
+      <h1>SCSS Basics</h1>
+      <button>go to channel</button>
+      <button>go to channel</button>
       {/* { places.map(place => (
           <div key={place.name}>
             <img src={place.image} alt={place.name} />
