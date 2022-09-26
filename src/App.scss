@@ -1,1 +1,42 @@
+$primary: lightpink;
 
+@mixin get-font($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+
+%border {
+    border: 1px solid pink;
+}
+
+body {
+    padding: 20px;
+}
+
+.App {
+    background-color: #f7f7f7;
+
+    h1 {
+       @include get-font(30, bold)
+    }
+
+    > button {
+        
+        @extend %border;
+
+        &.active {
+            background-color: lightcoral;
+        }
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+
+}
+
+/* .asd {
+    > button {
+        border: 1px solid black;
+    } 
+} */
