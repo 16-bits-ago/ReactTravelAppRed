@@ -1,5 +1,5 @@
 .main {
-  @apply bg-[#F7F7F7] grid grid-cols-2 gap-10 p-10;
+  @apply  grid grid-cols-2 gap-10;
 
   > h1 {
     @apply text-xl font-medium;
@@ -22,4 +22,8 @@
   .country {
     @apply text-orange-500 font-semibold text-lg
   }
+}
+
+.button {
+  @apply py-2 px-5 text-white bg-orange-400 hover:bg-orange-500 transition-colors duration-300 ease-in-out rounded-lg mb-3;
 }

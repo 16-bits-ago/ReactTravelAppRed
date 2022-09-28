@@ -1,4 +1,6 @@
-export const initialPlaces = [
+import { IPlace } from "./place.interface";
+
+export const initialPlaces: IPlace[] = [
     {
         name: 'Lake Louise',
         country: 'USA',
